@@ -4,23 +4,36 @@ body{
     background-size:cover;
     background-position: center;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+
 }
-.mainbox{   
+
+.main{
+    display: flex;
     border: solid;
-    
-    border-radius: 30px;
     border-color: black;
-    padding: 10px;
-    margin: 10px;
-    opacity: 0.8;
-    /*background-color: white;*/
-    
-    
-   
+    border-radius: 30px;
+    justify-content: center;
+    /* align-items:center; */
+    width: 500px;
+    height: 400px;
+
 }
-#123 {
-    border: dotted;
-    border-color: aquamarine;
+.mainbox{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.FirstC{
+    width: 50%;
+    height: 100%;
+    padding: 1px;
+}
+.SecoundC{
+    width: 50%;
+}
+.name{
+    height: 20%;
 }

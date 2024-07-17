@@ -4,28 +4,31 @@
         <link rel="stylesheet" href="external_css.css" type="text/css" media="screen"/>
     </head>
     <body>
-        <div>
+        <div class="main" id="111">
             <div class="mainbox">
-                <form action="https://api.genderize.io/?name=hassan" method="get" target="_blank">
-                    <div><h1>Mr. or Ms. ?</h1>
+                <div class="FirstC">
+                    <div class="name">
+                        <h1>Mr. or Ms. ?</h1>
                         Name 
-                        <input type="text" name="name" value="" size="20" maxlength="255"/> <br/>
+                        <input type="text" name="name" value="" size="10" maxlength="255"/> <br/>
                     </div>
-                    <div>
+                    <div class="buttonRadio">
                         <input type="radio" name="gender" value="Male"> Male <br/>
                         <input type="radio" name="gender" value="Female"> female <br/>
                     </div>
-                    <div>
+                    <div class="button">
                         <button type="submit"> submit</button><br/>
                         <button type="button"> save</button><br/>
                     </div>
-                </form>
-                <div>
+                </div>
+                <div class="SecoundC">
+                <div class="Prediction" id="123">
                     <h1>Prediction</h1>
                     <pre></pre>
                 </div>
-                <div> 
+                <div class="savedMassage"> 
                     <p></p>
+                </div>
                 </div>
             </div>
 
