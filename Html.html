@@ -4,42 +4,29 @@
         <link rel="stylesheet" href="external_css.css" type="text/css" media="screen"/>
     </head>
     <body>
-        <form action="https://google.com" method="get">
+      
             <div class="container">
                 <div class="Left">
-                    <div class="left" id="title">
-                        <h1>Mr. or Ms. ?</h1>
-                        Name  <input type="text" name="name" value="" size="5" maxlength="255"/> <br/>
-        
-                    </div>
-                    <div class="left" id="gender">
-                        <input type="radio" name="gender" value="Male"> Male <br/>
-                        <input type="radio" name="gender" value="Female"> female <br/>
-                    </div>
-                    <div class="left"  id="submit">
-                        <button type="submit"> submit</button><br/>
-                    </div>
-                    <div class="right" id="save">
-                        <button type="button"> save</button><br/>
-                    </div>
+                    <form action="https://api.genderize.io/?name=mahdi" method="get">
+                        <h1 class="marg">Mr. or Ms. ?</h1>
+                        Name  <input class="marg" type="text" name="name" value="" size="5" maxlength="255"/> <br/>
+                        <input class="marg" type="radio" name="gender" value="Male"> Male <br/>
+                        <input class="marg" type="radio" name="gender" value="Female"> female <br/>
+                        <button class="marg" type="submit"> submit</button><br/>
+                        <button class="marg" type="button"> save</button><br/>
+                    </form>
                 </div>
                 <div class="Right">
-                    <div class="right" id="prediction">
-                        <h1>Prediction</h1>
-                        <p>
+                        <h1 class="marg">Prediction</h1>
+                        <div class="marg">
                             Male 
-                        <br/>
+                        </div>
+                        <div class="marg">
                             0.97 
-                        </p>
-                    </div>
-                    <div class="right" id="saveMassage">
-                        <div class="right" id="Massage">
-                            <p> SAVED Answer</p>
                         </div>
-                        <div class="right" id="saveButtom">
-                            <button type="button">Clear </button>
-                        </div>
-                        
+                    <div class="right marg" id="saveMassage">
+                            <div class="marg"> SAVED Answer</div>
+                            <button class="marg" type="button" id="SaveButtom">Clear </button>
                     </div>
                 </div>
 
@@ -47,6 +34,6 @@
 
 
             </div>
-        </form>
+       
     </body>
  </html>
