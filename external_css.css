@@ -1,39 +1,73 @@
 body{
     background-image: url(download.jfif);
     background-repeat: no-repeat;
-    background-size:cover;
     background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-
-
+    color: azure;
+    padding: 0px;
+    margin: 0px;
 }
-
-.main{
+.container{
+    padding: 5px;
+    background-color: rgba(100, 152, 211, 0.683);
+    border-radius: 10px;
+    border: 2px;
+    border-color:rgba(100, 152, 211, 1) ;
+    border-style: solid;
     display: flex;
-    border: solid;
-    border-color: black;
-    border-radius: 30px;
-    justify-content: center;
-    /* align-items:center; */
-    width: 500px;
-    height: 400px;
+    height: 50vh;
+    width: 50vw;
+
 
 }
-.mainbox{
+.Left{
     display: flex;
-    flex-wrap: wrap;
-
-}
-.FirstC{
+    flex-direction: column;
     width: 50%;
     height: 100%;
-    padding: 1px;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
-.SecoundC{
+.Right{
+    display: flex;
+    flex-direction: column;
     width: 50%;
+    height: 100%;
+    /* justify-content: center;
+    align-items: center; */
 }
-.name{
-    height: 20%;
+ .left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+ }
+#title{
+
+}
+#gender{
+margin: 0px;
+}
+#submit{
+
+}
+#save{
+
+}
+#prediction{
+height: 40%;
+}
+#saveMassage{
+    border: 1.5px;
+    border-style: dashed;
+    border-radius: 3px;
+    border-color: gainsboro;
+    padding 1 10 1% 0;
+    height: 40%;
+    width: 100%;
 }

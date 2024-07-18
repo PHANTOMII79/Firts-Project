@@ -4,35 +4,49 @@
         <link rel="stylesheet" href="external_css.css" type="text/css" media="screen"/>
     </head>
     <body>
-        <div class="main" id="111">
-            <div class="mainbox">
-                <div class="FirstC">
-                    <div class="name">
+        <form action="https://google.com" method="get">
+            <div class="container">
+                <div class="Left">
+                    <div class="left" id="title">
                         <h1>Mr. or Ms. ?</h1>
-                        Name 
-                        <input type="text" name="name" value="" size="10" maxlength="255"/> <br/>
+                        Name  <input type="text" name="name" value="" size="5" maxlength="255"/> <br/>
+        
                     </div>
-                    <div class="buttonRadio">
+                    <div class="left" id="gender">
                         <input type="radio" name="gender" value="Male"> Male <br/>
                         <input type="radio" name="gender" value="Female"> female <br/>
                     </div>
-                    <div class="button">
+                    <div class="left"  id="submit">
                         <button type="submit"> submit</button><br/>
+                    </div>
+                    <div class="right" id="save">
                         <button type="button"> save</button><br/>
                     </div>
                 </div>
-                <div class="SecoundC">
-                <div class="Prediction" id="123">
-                    <h1>Prediction</h1>
-                    <pre></pre>
+                <div class="Right">
+                    <div class="right" id="prediction">
+                        <h1>Prediction</h1>
+                        <p>
+                            Male 
+                        <br/>
+                            0.97 
+                        </p>
+                    </div>
+                    <div class="right" id="saveMassage">
+                        <div class="right" id="Massage">
+                            <p> SAVED Answer</p>
+                        </div>
+                        <div class="right" id="saveButtom">
+                            <button type="button">Clear </button>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="savedMassage"> 
-                    <p></p>
-                </div>
-                </div>
+
+
+
+
             </div>
-
-        </div>
-
+        </form>
     </body>
-    </html>
+ </html>
