@@ -3,7 +3,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: azure;
+    color: rgb(236, 241, 241);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ body{
     border-color:rgba(100, 152, 211, 1) ;
     border-style: solid;
     display: flex;
-    width:65vw ;
+
 
 }
 .Left{
@@ -43,7 +43,7 @@ body{
 
 }
 #SaveButtom{
-    width: 50%;
+    width: 20%;
 
 }
 

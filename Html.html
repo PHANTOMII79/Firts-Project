@@ -1,32 +1,32 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Alvani Midterm</title>
         <link rel="stylesheet" href="external_css.css" type="text/css" media="screen"/>
+        <script src="java_script.js" type="text/javascript"></script>
     </head>
     <body>
       
             <div class="container">
                 <div class="Left">
-                    <form action="https://api.genderize.io/?name=mahdi" method="get">
                         <h1 class="marg">Mr. or Ms. ?</h1>
-                        Name  <input class="marg" type="text" name="name" value="" size="5" maxlength="255"/> <br/>
-                        <input class="marg" type="radio" name="gender" value="Male"> Male <br/>
-                        <input class="marg" type="radio" name="gender" value="Female"> female <br/>
-                        <button class="marg" type="submit"> submit</button><br/>
-                        <button class="marg" type="button"> save</button><br/>
-                    </form>
+                        Name<input class="marg" id="NameBox" type="text" name="name" value="" size="5" maxlength="255"/> <br/>
+                        <input class="marg" type="radio" name="gender" value="Male"/> Male 
+                        <input class="marg" type="radio" name="gender" value="Female"> female 
+                        <button class="marg" type="button" onclick="fetchdata()" > submit</button>
+                        <button class="marg" type="button" id="savebutton" onclick="save()"> save</button>
                 </div>
                 <div class="Right">
                         <h1 class="marg">Prediction</h1>
-                        <div class="marg">
-                            Male 
+                        <div class="marg" id="gender">
+                            SEX
                         </div>
-                        <div class="marg">
-                            0.97 
+                        <div class="marg" id="probability">
+                            probability
                         </div>
                     <div class="right marg" id="saveMassage">
-                            <div class="marg"> SAVED Answer</div>
-                            <button class="marg" type="button" id="SaveButtom">Clear </button>
+                            <div class="marg" id="savedBox"> SAVED Answer</div>
+                            <button class="marg" type="button" id="Clearbutton" onclick="Clear()" >Clear </button>
                     </div>
                 </div>
 
